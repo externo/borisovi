@@ -373,10 +373,22 @@
     <div class="messages">
         <h1 class="slideInDown wow animated" data-wow-delay="0.5s">Деси <span class="heart pulsing fa fa-heart"></span>
             Марти</h1>
+
+        <!--COUNTDOWN TIMER PURPLE-->
+        <div id="countdown_container" style="z-index: 1">
+            <div id="countdown_timer"></div>
+            <div id="countdown_clock">
+                <canvas id="circular_countdown_days" width="160" height="160"></canvas>
+                <canvas id="circular_countdown_hours" width="160" height="160"></canvas>
+                <canvas id="circular_countdown_minutes" width="160" height="160"></canvas>
+                <canvas id="circular_countdown_seconds" width="160" height="160"></canvas>
+            </div>
+        </div>
+
         <script type="text/javascript">
             /* <![CDATA[ */
             setInterval(function () {
-                var timespan = countdown(new Date("05/30/2015"), new Date());
+                var timespan = countdown(new Date("05/30/2015 19:00:00"), new Date());
                 var div = document.getElementById('time');
                 div.innerHTML = "<div><span>Дни</span>" + timespan.days + "</div>" + "<div><span>Часа</span>" + timespan.hours +
                 "</div>" + "<div><span>Минути</span>" + timespan.minutes + "</div>" + "<div><span>Секунди</span>" + timespan.seconds + "</div>"
@@ -2380,5 +2392,9 @@
         src='http://plutonthemes.com/themes/ilove/wp-includes/js/comment-reply.min.js?ver=4.2.2'></script>
 <script type='text/javascript'
         src='http://plutonthemes.com/themes/ilove/wp-content/themes/ilove/assets/js/jquery.nav.js?ver=1.0.0.0'></script>
+
+<!-- Countdown Plugin -->
+<script src="js/countdown_plugins.js"></script>
+<script src="js/countdown.js"></script>
 </body>
 </html>
