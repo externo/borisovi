@@ -7,6 +7,10 @@
   max-width:100%;
 }
 
+.wrap-bg img{
+  border: 5px groove rgba(239,106,138, .5);
+}
+
 .gallery-item {
   margin:0;
 }
@@ -72,6 +76,10 @@
   position: relative;
 }
 #owl-demo{height: 100%; overflow: hidden;}
+
+.messages h1, .messages h4, #dslc-content h2{
+  color: #f04c74;
+}
 #myCarousel .overlay2{top: 0px;}
 #myCarousel .geo{top: 0px;}
 .switcher {
