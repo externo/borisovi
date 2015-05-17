@@ -7,6 +7,11 @@
   max-width:100%;
 }
 
+#blogs988 {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .wrap-bg img{
   border: 5px groove rgba(239,106,138, .5);
 }
@@ -77,8 +82,9 @@
 }
 #owl-demo{height: 100%; overflow: hidden;}
 
-.messages h1, .messages h4, #dslc-content h2{
+.pinkText, #lookMore, .messages h1, .messages h4, #dslc-content h2{
   color: #f04c74;
+  text-shadow: 0 0 2px #fff;
 }
 #myCarousel .overlay2{top: 0px;}
 #myCarousel .geo{top: 0px;}
